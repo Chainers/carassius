@@ -1,20 +1,23 @@
+import os
 import sys
 from codecs import open
-from os import path
 
 from setuptools import setup, find_packages
 
-here = path.abspath(path.dirname(__file__))
+here = os.path.abspath(os.path.dirname(__file__))
 
 assert sys.version_info[0] == 3, "steepdata requires Python > 3"
 
-VERSION = '0.0.1'
+
+def readme_file():
+    return 'README.rst' if os.path.exists('README.rst') else 'README.md'
+
 
 setup(
     name='steepdata',
-    version=VERSION,
+    version='0.0.1',
     description='Python Utilities for parsing STEEM blockchain',
-    long_description=open('README.md').read(),
+    long_description=open(readme_file()).read(),
     url='https://github.com/Chainers/steepdata',
     author='by SteepShot team',
     author_email='steepshot.org@gmail.com',
