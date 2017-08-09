@@ -3,8 +3,8 @@ import re
 from typing import Union
 
 from funcy.colls import walk_values
-from steem.amount import Amount
-from steem.utils import keep_in_dict, parse_time
+from steep.amount import Amount
+from steep.utils import keep_in_dict, parse_time
 from toolz import update_in
 
 

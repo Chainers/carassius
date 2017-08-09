@@ -5,9 +5,9 @@ from pprint import pprint
 from statistics import mean
 
 import requests
-import steem as stm
 from funcy.flow import silent
-from steem.amount import Amount
+from steep import Steem
+from steep.amount import Amount
 
 
 class Tickers(object):
@@ -115,7 +115,7 @@ class Tickers(object):
 class Markets(Tickers):
     def __init__(self, cache_timeout=60, steem_instance=None):
         if not steem_instance:
-            steem_instance = stm.Steem()
+            steem_instance = Steem()
         self.steem = steem_instance
 
         self._cache_timeout = cache_timeout

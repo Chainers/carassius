@@ -3,13 +3,13 @@ import logging
 import pymongo
 from pymongo.errors import ConnectionFailure
 
-log = logging.Logger('steemdata-lib')
+logger = logging.getLogger(__name__)
 
 
 class SteemData(object):
     def __init__(self,
                  db_name='SteemData',
-                 host='steemit:steemit@mongo1.steemdata.com',
+                 host='localhost',
                  port=27017):
         try:
             self.mongo_url = 'mongodb://%s:%s/%s' % (host, port, db_name)
@@ -17,7 +17,7 @@ class SteemData(object):
             self.db = client[db_name]
 
         except ConnectionFailure as e:
-            log.error('Can not connect to MongoDB server: %s' % e)
+            logger.error('Can not connect to MongoDB server: %s' % e)
             raise
         else:
             self.load_collections()
