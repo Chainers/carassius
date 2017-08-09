@@ -1,0 +1,40 @@
+# exclude idea files
+/.idea
+
+# Vim plugins
+.ropeproject/
+
+# Byte-compiled / optimized / DLL files
+*.py[cod]
+
+__pycache__/
+
+# Distribution / packaging
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# virtualenv
+venv/
+ENV/
