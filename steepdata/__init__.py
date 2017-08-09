@@ -1,4 +1,4 @@
-from steepdata.steepdata import SteemData
+from steepdata.steemdata import SteemData
 
 __all__ = [
     'helpers',
