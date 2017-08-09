@@ -19,7 +19,7 @@ setup(
     description='Python Utilities for parsing STEEM blockchain',
     long_description=open(readme_file()).read(),
     url='https://github.com/Chainers/steepdata',
-    author='by SteepShot team',
+    author='@steepshot',
     author_email='steepshot.org@gmail.com',
     license=open('LICENSE.txt').read(),
     classifiers=[
@@ -29,6 +29,7 @@ setup(
     ],
     keywords='steem steemit steepdata',
     packages=find_packages(exclude=['contrib', 'docs', 'tests']),
+    data_files=[('license', ['LICENSE.txt'])],
 
     install_requires=[
         'steep-steem',
