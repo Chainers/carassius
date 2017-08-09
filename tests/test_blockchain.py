@@ -1,6 +1,6 @@
 import datetime
 
-from steemdata.utils import typify
+from steepdata.utils import typify
 
 
 def test_typify():
