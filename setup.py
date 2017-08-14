@@ -19,7 +19,7 @@ def license_file():
 
 setup(
     name='steepdata',
-    version='0.0.1',
+    version='0.0.2',
     description='Python Utilities for parsing STEEM blockchain',
     long_description=open(readme_file()).read(),
     url='https://github.com/Chainers/steepdata',
@@ -41,6 +41,7 @@ setup(
         'requests',
         'funcy',
         'werkzeug',
+        'toolz'
     ],
 
     extras_require={
