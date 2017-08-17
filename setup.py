@@ -46,4 +46,6 @@ setup(
         'dev': ['check-manifest'],
         'test': ['coverage'],
     },
+
+    test_suite="tests.test_steepdata",
 )
